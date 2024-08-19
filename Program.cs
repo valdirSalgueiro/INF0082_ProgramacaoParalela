@@ -11,32 +11,26 @@ namespace PPCourse
 {
     partial class Program
     {
-
-        public delegate void ManualDelegate();
-        public delegate void TCDelegate();
+        public delegate void ExercicioDelegate();
 
         static void Main(string[] args)
         {
-            Delegate[][] exercicios = new Delegate[5][];
+            Delegate[] exercicios = new Delegate[4];
 
-            exercicios[0] = new Delegate[] { new ManualDelegate(stub), new TCDelegate(stub) };
-            exercicios[1] = new Delegate[] { new ManualDelegate(tc2), new TCDelegate(stub) };
-            //exercicios[2] = new Delegate[] { new ManualDelegate(manual1), new TCDelegate(tc1) };
+            exercicios[0] = new ExercicioDelegate(exercicio1_1);
+            exercicios[1] = new ExercicioDelegate(exercicio1_2);
+            exercicios[2] = new ExercicioDelegate(exercicio2);
+            exercicios[3] = new ExercicioDelegate(exercicio3);
             for (int i = 0; i < exercicios.Length; i++)
             {
                 if (exercicios[i] == null)
                     break;
 
-                Console.WriteLine($"Executando exercício {i + 1}:");
+                Console.WriteLine($"Executando exercício {exercicios[i].Method.Name}:");
 
-                if (exercicios[i][0] is ManualDelegate manualDelegate)
+                if (exercicios[i] is ExercicioDelegate exercicioDelegate)
                 {
-                    manualDelegate();
-                }
-
-                if (exercicios[i][1] is TCDelegate automaticoDelegate)
-                {
-                    automaticoDelegate();
+                    exercicioDelegate();
                 }
             }
         }

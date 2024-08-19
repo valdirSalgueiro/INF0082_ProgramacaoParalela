@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ex3.cs" />
     <Compile Include="ex2.cs" />
     <Compile Include="ex1.cs" />
     <Compile Include="Program.cs" />

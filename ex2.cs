@@ -6,7 +6,7 @@ namespace PPCourse
 {
     partial class Program
     {
-        static void tc2()
+        static void exercicio2()
         {
             Console.Write("Digite o tamanho do array (N): ");
             // Ler N da entrada

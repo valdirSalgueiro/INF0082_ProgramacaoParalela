@@ -10,7 +10,7 @@ namespace PPCourse
 {
     partial class Program
     {
-        private static void tc1()
+        private static void exercicio1_2()
         {
             string[] tcs = { "t01.in", "t02.in", "t03.in", "t04.in" };
             foreach (string caminho in tcs)
@@ -24,11 +24,11 @@ namespace PPCourse
                 string[] frases = new string[N];
                 Array.Copy(linhas, 1, frases, 0, N);
 
-                StartThreads(N, frases);
+                IniciarThreads(N, frases);
             }
         }
 
-        private static void manual1()
+        private static void exercicio1_1()
         {
             // Ler o valor de N da entrada
             int N = int.Parse(Console.ReadLine());
@@ -42,10 +42,10 @@ namespace PPCourse
                 frases[i] = Console.ReadLine();
             }
 
-            StartThreads(N, frases);
+            IniciarThreads(N, frases);
         }
 
-        private static void StartThreads(int N, string[] frases)
+        private static void IniciarThreads(int N, string[] frases)
         {
             Thread[] threads = new Thread[N];
             for (int i = 0; i < N; i++)
