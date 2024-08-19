@@ -6,6 +6,21 @@ namespace PPCourse
 {
     partial class Program
     {
+/*
+Conclusões dos Resultados
+
+1. Tamanho do Array (N = 100000)
+   - Comportamento Observado: À medida que o número de threads aumenta, o tempo de execução também aumenta, e o speedup diminui. O melhor tempo é com uma única thread, e o desempenho piora significativamente com mais threads.
+   - Conclusão: Para arrays menores, a sobrecarga associada à criação e gerenciamento de threads supera os benefícios do paralelismo. Isso ocorre porque o trabalho a ser dividido entre as threads é pequeno, e o overhead de sincronização e troca de contexto domina o tempo de execução.
+
+2. Tamanho do Array (N = 100000000)
+   - Comportamento Observado: Com um array muito grande, o speedup melhora substancialmente ao utilizar 2 e 4 threads, atingindo o máximo com 4 threads. No entanto, com 8 threads e além, o speedup começa a diminuir.
+   - Conclusão: Para arrays grandes, o paralelismo é efetivo até certo ponto, onde a quantidade de trabalho distribuído entre as threads é suficiente para compensar o overhead. Entretanto, quando o número de threads continua a aumentar, o overhead de sincronização começa a superar os benefícios do paralelismo, especialmente devido à contenção e ao aumento da complexidade de gerenciamento de threads.
+
+3. Tamanho do Array (N = 1000)
+   - Comportamento Observado: Para um array muito pequeno, o tempo de execução com várias threads é significativamente pior do que com uma única thread. O speedup é muito baixo, indicando uma perda de desempenho considerável com o aumento do número de threads.
+   - Conclusão: Para tarefas muito pequenas, o uso de múltiplas threads não é eficiente e pode ser prejudicial. A sobrecarga de gerenciar threads é muito alta em relação ao trabalho real a ser feito, resultando em tempos de execução maiores.
+*/
         static void exercicio2()
         {
             Console.Write("Digite o tamanho do array (N): ");
