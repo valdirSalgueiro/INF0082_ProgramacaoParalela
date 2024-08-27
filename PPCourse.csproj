@@ -59,9 +59,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ex3.cs" />
-    <Compile Include="ex2.cs" />
-    <Compile Include="ex1.cs" />
+    <Compile Include="Lab1\ex3.cs" />
+    <Compile Include="Lab1\ex2.cs" />
+    <Compile Include="Lab1\ex1.cs" />
+    <Compile Include="Lab1\Lab1.cs" />
+    <Compile Include="Lab2\Lab2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

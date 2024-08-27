@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace PPCourse
 {
-    partial class Program
+    public partial class Lab1
     {
 /*
 Conclusões dos Resultados

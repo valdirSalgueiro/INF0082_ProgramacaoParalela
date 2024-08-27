@@ -67,7 +67,7 @@ Comparação entre as Versões
 */
 
 
-    partial class Program
+    public partial class Lab1
     {
         private static int[] quantidadesDeThreads = { 1, 2, 4, 8, 16, 32 };
         private static int[] rangesAleatorio = { 1000, 10000, 100000 };

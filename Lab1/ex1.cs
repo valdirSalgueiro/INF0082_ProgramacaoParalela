@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PPCourse
 {
-    partial class Program
+    public partial class Lab1
     {
         private static void exercicio1_2()
         {
