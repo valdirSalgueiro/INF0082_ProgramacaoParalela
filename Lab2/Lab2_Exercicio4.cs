@@ -11,22 +11,18 @@ namespace PPCourse
     public class Lab2_Exercicio4
     {
         /**
-         *  Tempo com Tasks: 37 ms
+            Tempo com Tasks: 37 ms
             Tempo com Parallel.For: 0 ms
             Tempo com Parallel.ForEach: 12 ms
 
-         *  Parallel.For parece ser a abordagem mais rápida neste cenário, possivelmente devido à sua eficiência em gerenciar iterações em paralelo para tarefas simples.
+            Parallel.For parece ser a abordagem mais rápida neste cenário, possivelmente devido à sua eficiência em gerenciar iterações em paralelo para tarefas simples.
             Parallel.ForEach teve um desempenho razoável e pode ser uma boa escolha para operações em coleções.
             Tasks teve um desempenho inferior, possivelmente devido ao overhead associado à criação e gerenciamento de muitas tarefas.
-         *
          */
 
         public static void Run()
         {
-            string[] arquivos = new[] { 
-                "Lab2/Ex4/t1.in", 
-            //    "Lab2/Ex4/t2.in" 
-            };
+            string[] arquivos = new[] { "Lab2/Ex4/t1.in", "Lab2/Ex4/t2.in"  };
             foreach (var arquivo in arquivos)
             {
                 RunFile(arquivo);
