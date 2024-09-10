@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace PPCourse
 {
@@ -95,8 +92,6 @@ namespace PPCourse
 
     class ProgramaSequencial
     {
-        private static readonly HttpClient client = new HttpClient();
-
         public static void Executar(List<int> ids)
         {
             List<string> resultados = new List<string>();
@@ -112,8 +107,6 @@ namespace PPCourse
 
     class ProgramaParallel
     {
-        private static readonly HttpClient client = new HttpClient();
-
         public static void Executar(List<int> ids)
         {
             List<string> resultados = new List<string>();
