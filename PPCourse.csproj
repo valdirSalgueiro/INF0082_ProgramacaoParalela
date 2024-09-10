@@ -63,6 +63,7 @@
     <Compile Include="Lab1\ex2.cs" />
     <Compile Include="Lab1\ex1.cs" />
     <Compile Include="Lab1\Lab1.cs" />
+    <Compile Include="Lab2\Lab2_Exercicio4.cs" />
     <Compile Include="Lab2\Lab2_Exercicio3.cs" />
     <Compile Include="Lab2\Lab2_Exercicio2.cs" />
     <Compile Include="Lab2\Lab2_Exercicio1.cs" />
@@ -101,8 +102,12 @@
     <Content Include="Lab2\Ex3\t3.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Lab2\Ex4\t1.in" />
-    <None Include="Lab2\Ex4\t2.in" />
+    <Content Include="Lab2\Ex4\t1.in">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lab2\Ex4\t2.in">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Lab2\Ex5\t1.in" />
     <None Include="Lab2\Ex5\t2.in" />
     <None Include="Lab2\Ex5\t3.in" />
