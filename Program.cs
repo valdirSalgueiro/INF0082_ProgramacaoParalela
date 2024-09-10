@@ -11,8 +11,6 @@ namespace PPCourse
 {
     partial class Program
     {
-        public delegate void ExercicioDelegate();
-
         static void Main(string[] args)
         {
             RodarLab2();
@@ -20,7 +18,7 @@ namespace PPCourse
 
         private static void RodarLab2()
         {
-            Lab2_Exercicio1.Benchmark();
+            Lab2_Exercicio3.Run();
         }
     }
 }

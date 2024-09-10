@@ -63,7 +63,9 @@
     <Compile Include="Lab1\ex2.cs" />
     <Compile Include="Lab1\ex1.cs" />
     <Compile Include="Lab1\Lab1.cs" />
-    <Compile Include="Lab2\Lab2.cs" />
+    <Compile Include="Lab2\Lab2_Exercicio3.cs" />
+    <Compile Include="Lab2\Lab2_Exercicio2.cs" />
+    <Compile Include="Lab2\Lab2_Exercicio1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

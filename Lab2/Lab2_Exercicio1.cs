@@ -32,7 +32,7 @@ namespace PPCourse
         Possíveis causas: O overhead associado à criação e sincronização de threads provavelmente superou os benefícios do paralelismo devido ao custo da operação lock e à natureza relativamente simples do cálculo. Em cenários onde o trabalho por thread é muito pequeno, o paralelismo pode não ser vantajoso.
         */
 
-        public static void Benchmark()
+        public static void Run()
         {
             int[] inputs = { 1000000, 10000000, 100000000 };
 

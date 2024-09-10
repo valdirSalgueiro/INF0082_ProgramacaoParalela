@@ -9,6 +9,7 @@ namespace PPCourse
 {
     public partial class Lab1
     {
+        public delegate void ExercicioDelegate();
         private static void RodarLab1()
         {
             Delegate[] exercicios = new Delegate[4];
