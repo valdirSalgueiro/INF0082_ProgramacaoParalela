@@ -13,11 +13,6 @@ namespace PPCourse
     {
         static void Main(string[] args)
         {
-            RodarLab2();
-        }
-
-        private static void RodarLab2()
-        {
             Lab2_Exercicio3.Run();
         }
     }

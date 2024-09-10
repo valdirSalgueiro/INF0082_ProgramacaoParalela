@@ -70,19 +70,44 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Lab2\Ex3\t1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lab2\Ex3\t2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lab2\Ex3\t3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="App.config" />
-    <Content Include="Ex1\t01.in">
+    <Content Include="Lab1\Ex1\t01.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Ex1\t02.in">
+    <Content Include="Lab1\Ex1\t02.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Ex1\t03.in">
+    <Content Include="Lab1\Ex1\t03.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Ex1\t04.in">
+    <Content Include="Lab1\Ex1\t04.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Lab2\Ex3\t1.in">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lab2\Ex3\t2.in">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lab2\Ex3\t3.in">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Lab2\Ex4\t1.in" />
+    <None Include="Lab2\Ex4\t2.in" />
+    <None Include="Lab2\Ex5\t1.in" />
+    <None Include="Lab2\Ex5\t2.in" />
+    <None Include="Lab2\Ex5\t3.in" />
+    <None Include="Lab2\Ex5\t4.in" />
+    <None Include="Lab2\Ex5\t5.in" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8.1">
@@ -96,5 +121,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
