@@ -40,7 +40,6 @@ namespace PPCourse
             {
                 Console.WriteLine($"Número de inteiros: {input}");
 
-                // Versão Sequencial
                 Stopwatch stopwatch = Stopwatch.StartNew();
                 long somaSequencial = Sequencial(input);
                 stopwatch.Stop();
@@ -48,7 +47,6 @@ namespace PPCourse
                 Console.WriteLine($"Soma dos quadrados (sequencial): {somaSequencial}");
                 Console.WriteLine($"Tempo sequencial: {tempoSequencial} ms");
 
-                // Versão Paralela
                 stopwatch.Restart();
                 long somaParalela = Paralela(input);
 
@@ -57,7 +55,6 @@ namespace PPCourse
                 Console.WriteLine($"Soma dos quadrados (paralela): {somaParalela}");
                 Console.WriteLine($"Tempo paralelo: {tempoParalelo} ms");
 
-                // Speedup
                 double speedup = (double)tempoSequencial / tempoParalelo;
                 Console.WriteLine($"Speedup: {speedup}");
             }
