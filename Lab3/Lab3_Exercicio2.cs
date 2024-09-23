@@ -50,18 +50,18 @@ namespace PPCourse
 
             for (int i = 0; i < usuarios; i++)
             {
-                int usuario = i + 1;
+                int usuario = i;
                 tasks[i + 1] = Task.Run(async () =>
                 {
                     Random random = new Random();
-                    for (int j = 0; j < leituras[i]; j++)
+                    for (int j = 0; j < leituras[usuario]; j++)
                     {
                         await Task.Delay(random.Next(200, 800));
 
                         rwLock.EnterReadLock();
                         try
                         {
-                            Console.WriteLine($"Usuário {usuario}: Temperatura lida: {temperatura:F2}°C");
+                            Console.WriteLine($"Usuário {usuario + 1}: Temperatura lida: {temperatura:F2}°C");
                         }
                         finally
                         {
