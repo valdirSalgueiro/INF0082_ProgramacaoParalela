@@ -13,7 +13,7 @@ namespace PPCourse
     {
         static void Main(string[] args)
         {
-            Lab2_Exercicio5.Run().Wait();
+            Lab3_Exercicio2.Run().Wait();
         }
     }
 }
